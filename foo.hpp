@@ -10,6 +10,7 @@ std::vector< char > foo(std::list< Human >& people)
     std::vector< char > v1;
     for (std::list< Human >::reverse_iterator p = people.rbegin(); p != people.rend(); ++p) {
         p->birthday();
+
         if (p->isMonster()) {
             v1.push_back('n');
         }
